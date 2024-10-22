@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, DeviceInsightDelegate {
     
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var stressButton: UIButton!
 
     var deviceInsight: DeviceInsight!
 
@@ -20,6 +21,8 @@ class ViewController: UIViewController, DeviceInsightDelegate {
         deviceInsight = DeviceInsight(interval: 5.0)
         deviceInsight.delegate = self
         deviceInsight.startMonitoring()
+        
+        stressButton.addTarget(self, action: #selector(didTapStressButton), for: .touchUpInside)
     }
     
     // DeviceInsightDelegateメソッド
@@ -40,7 +43,28 @@ class ViewController: UIViewController, DeviceInsightDelegate {
             self.textView.text = systemInfoText
         }
     }
+    
+    // ストレステスト用のボタンが押された時の処理
+    @objc func didTapStressButton() {
+        DispatchQueue.global(qos: .background).async {
+            // CPUを消費する重い処理
+            self.performHeavyComputation()
+        }
+    }
 
+    // CPUやメモリを消費する処理
+    func performHeavyComputation() {
+        var array: [Int] = []
+        for i in 0..<10_000_000 {
+            array.append(i)
+            if i % 100_000 == 0 {
+                print("Processing \(i)...") // 大量の計算処理
+            }
+        }
+        print("Completed heavy computation.")
+    }
+
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         // 監視を停止

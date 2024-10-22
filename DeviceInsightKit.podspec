@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DeviceInsightKit'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'Framework for accessing device system information such as battery, CPU usage, and more.'
 
   s.description      = <<-DESC

@@ -7,6 +7,16 @@
 
 import UIKit
 
+public struct SystemInfo {
+    let batteryLevel: Int
+    let batteryState: String
+    let freeDiskSpace: String
+    let deviceName: String
+    let systemVersion: String
+    let memoryUsage: Float
+    let cpuUsage: Float
+}
+
 public class CoreAccesser {
     
     public init() {}
@@ -78,40 +88,37 @@ public class CoreAccesser {
     
     // CPU使用率の取得（小数点以下1桁まで返す）
     public func getCPUUsage() -> Float {
-        // カーネル処理の結果
         var result: Int32
-        var threadList = UnsafeMutablePointer<UInt32>.allocate(capacity: 1)
-        var threadCount = UInt32(MemoryLayout<mach_task_basic_info_data_t>.size / MemoryLayout<natural_t>.size)
-        var threadInfo = thread_basic_info()
+        var threadList: thread_act_array_t?
+        var threadCount = mach_msg_type_number_t()
 
         // スレッド情報を取得
-        result = withUnsafeMutablePointer(to: &threadList) {
-            $0.withMemoryRebound(to: thread_act_array_t?.self, capacity: 1) {
-                task_threads(mach_task_self_, $0, &threadCount)
+        result = task_threads(mach_task_self_, &threadList, &threadCount)
+        if result != KERN_SUCCESS { return 0 }
+
+        var totalCPUUsage: Float = 0
+        // 各スレッドからCPU使用率を算出し合計を全体のCPU使用率とする
+        for index in 0..<Int(threadCount) {
+            var threadInfo = thread_basic_info()
+            var threadInfoCount = mach_msg_type_number_t(THREAD_INFO_MAX)
+
+            result = withUnsafeMutablePointer(to: &threadInfo) {
+                $0.withMemoryRebound(to: integer_t.self, capacity: 1) {
+                    thread_info(threadList![index], thread_flavor_t(THREAD_BASIC_INFO), $0, &threadInfoCount)
+                }
+            }
+
+            if result != KERN_SUCCESS { continue }
+
+            let isIdle = (threadInfo.flags & TH_FLAGS_IDLE) != 0
+            if !isIdle {
+                totalCPUUsage += (Float(threadInfo.cpu_usage) / Float(TH_USAGE_SCALE)) * 100
             }
         }
 
-        if result != KERN_SUCCESS { return 0 }
+        // 使用後にスレッドリストのメモリを解放
+        vm_deallocate(mach_task_self_, vm_address_t(bitPattern: threadList), vm_size_t(threadCount * UInt32(MemoryLayout<thread_t>.size)))
 
-        // 各スレッドからCPU使用率を算出し合計を全体のCPU使用率とする
-        let totalCPUUsage = (0 ..< Int(threadCount))
-            // スレッドのCPU使用率を取得
-            .compactMap { index -> Float? in
-                var threadInfoCount = UInt32(THREAD_INFO_MAX)
-                result = withUnsafeMutablePointer(to: &threadInfo) {
-                    $0.withMemoryRebound(to: integer_t.self, capacity: 1) {
-                        thread_info(threadList[index], UInt32(THREAD_BASIC_INFO), $0, &threadInfoCount)
-                    }
-                }
-                // スレッド情報が取れない = 該当スレッドのCPU使用率を0とみなす(基本nilが返ることはない)
-                if result != KERN_SUCCESS { return nil }
-                let isIdle = threadInfo.flags == TH_FLAGS_IDLE
-                // CPU使用率がスケール調整済みのため`TH_USAGE_SCALE`で除算し戻す
-                return !isIdle ? (Float(threadInfo.cpu_usage) / Float(TH_USAGE_SCALE)) * 100 : nil
-            }
-            // 合計算出
-            .reduce(0, +)
-        
         // 小数点以下1桁に丸めて返す
         return round(totalCPUUsage * 10) / 10
     }

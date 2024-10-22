@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,21 +20,36 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEj-A3-vVV">
                                 <rect key="frame" x="59" y="256" width="286" height="311"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="311" id="Gcp-Ne-cPE"/>
+                                    <constraint firstAttribute="width" constant="286" id="fA7-Jp-BEJ"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHq-NZ-Ciu">
+                                <rect key="frame" x="118" y="783" width="157" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ABx-Bt-g1y"/>
+                                    <constraint firstAttribute="width" constant="157" id="cNJ-0q-SOJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="STRESS"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sEj-A3-vVV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="AcX-46-IrI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sEj-A3-vVV" secondAttribute="bottom" constant="251" id="BJ8-LT-pzZ"/>
                             <constraint firstItem="sEj-A3-vVV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="Gu8-j6-CRK"/>
+                            <constraint firstItem="dHq-NZ-Ciu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kQV-mb-qMw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sEj-A3-vVV" secondAttribute="trailing" constant="48" id="z9N-p1-jUc"/>
+                            <constraint firstItem="dHq-NZ-Ciu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zIP-Mt-fXg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="stressButton" destination="dHq-NZ-Ciu" id="Apa-SB-5zC"/>
                         <outlet property="textView" destination="sEj-A3-vVV" id="ySN-hb-Thh"/>
                     </connections>
                 </viewController>

@@ -7,15 +7,7 @@
 
 import UIKit
 
-public struct SystemInfo {
-    let batteryLevel: Int
-    let batteryState: String
-    let freeDiskSpace: String
-    let deviceName: String
-    let systemVersion: String
-    let memoryUsage: Float
-    let cpuUsage: Float
-}
+
 
 public protocol DeviceInsightDelegate: AnyObject {
     func didUpdateSystemInfo(_ systemInfo: SystemInfo)
