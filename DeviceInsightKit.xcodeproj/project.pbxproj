@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E580B0E62CC7B4EA001916AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E580B0E52CC7B4EA001916AD /* README.md */; };
 		E5DB47712CC7263300640C33 /* DeviceInsightKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = E5DB47702CC7263300640C33 /* DeviceInsightKit.docc */; };
 		E5DB47772CC7263300640C33 /* DeviceInsightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DB476C2CC7263300640C33 /* DeviceInsightKit.framework */; };
 		E5DB477C2CC7263300640C33 /* DeviceInsightKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB477B2CC7263300640C33 /* DeviceInsightKitTests.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E580B0E52CC7B4EA001916AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E5DB476C2CC7263300640C33 /* DeviceInsightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceInsightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DB476F2CC7263300640C33 /* DeviceInsightKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInsightKit.h; sourceTree = "<group>"; };
 		E5DB47702CC7263300640C33 /* DeviceInsightKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DeviceInsightKit.docc; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				E5DB47862CC7265400640C33 /* DeviceInsightKit.podspec */,
 				E5DB47882CC7269700640C33 /* LICENSE */,
+				E580B0E52CC7B4EA001916AD /* README.md */,
 				E5DB476E2CC7263300640C33 /* DeviceInsightKit */,
 				E5DB477A2CC7263300640C33 /* DeviceInsightKitTests */,
 				E5DB47952CC7296500640C33 /* DeviceInsightKitSampleApp */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E580B0E62CC7B4EA001916AD /* README.md in Resources */,
 				E5DB47892CC7269700640C33 /* LICENSE in Resources */,
 				E5DB47872CC7265400640C33 /* DeviceInsightKit.podspec in Resources */,
 			);
