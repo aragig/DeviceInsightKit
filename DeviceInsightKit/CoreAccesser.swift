@@ -8,13 +8,13 @@
 import UIKit
 
 public struct SystemInfo {
-    let batteryLevel: Int
-    let batteryState: String
-    let freeDiskSpace: String
-    let deviceName: String
-    let systemVersion: String
-    let memoryUsage: Float
-    let cpuUsage: Float
+    public let batteryLevel: Int
+    public let batteryState: String
+    public let freeDiskSpace: String
+    public let deviceName: String
+    public let systemVersion: String
+    public let memoryUsage: Float
+    public let cpuUsage: Float
 }
 
 public class CoreAccesser {
