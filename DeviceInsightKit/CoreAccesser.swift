@@ -32,8 +32,9 @@ public class CoreAccesser {
     public func getFreeDiskSpace() -> String {
         let fileURL = URL(fileURLWithPath: NSHomeDirectory() as String)
         do {
-            let values = try fileURL.resourceValues(forKeys: [.volumeAvailableCapacityForImportantUsageKey])
-            if let capacity = values.volumeAvailableCapacityForImportantUsage {
+            // iOS 12では volumeAvailableCapacityKey を使用
+            let values = try fileURL.resourceValues(forKeys: [.volumeAvailableCapacityKey])
+            if let capacity = values.volumeAvailableCapacity {
                 return String(format: "%.2f GB", Float(capacity) / (1024 * 1024 * 1024))
             } else {
                 return "N/A"
