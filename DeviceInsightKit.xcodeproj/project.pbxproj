@@ -11,6 +11,19 @@
 		E5DB47772CC7263300640C33 /* DeviceInsightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DB476C2CC7263300640C33 /* DeviceInsightKit.framework */; };
 		E5DB477C2CC7263300640C33 /* DeviceInsightKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB477B2CC7263300640C33 /* DeviceInsightKitTests.swift */; };
 		E5DB477D2CC7263300640C33 /* DeviceInsightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E5DB476F2CC7263300640C33 /* DeviceInsightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5DB47872CC7265400640C33 /* DeviceInsightKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E5DB47862CC7265400640C33 /* DeviceInsightKit.podspec */; };
+		E5DB47892CC7269700640C33 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E5DB47882CC7269700640C33 /* LICENSE */; };
+		E5DB478B2CC726EE00640C33 /* DeviceInsight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB478A2CC726EE00640C33 /* DeviceInsight.swift */; };
+		E5DB478D2CC7270000640C33 /* CoreAccesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB478C2CC7270000640C33 /* CoreAccesser.swift */; };
+		E5DB478F2CC7279E00640C33 /* CoreAccesserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB478E2CC7279E00640C33 /* CoreAccesserTests.swift */; };
+		E5DB47972CC7296500640C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB47962CC7296500640C33 /* AppDelegate.swift */; };
+		E5DB47992CC7296500640C33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB47982CC7296500640C33 /* SceneDelegate.swift */; };
+		E5DB479B2CC7296500640C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB479A2CC7296500640C33 /* ViewController.swift */; };
+		E5DB479E2CC7296500640C33 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E5DB479D2CC7296500640C33 /* Base */; };
+		E5DB47A02CC7296700640C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DB479F2CC7296700640C33 /* Assets.xcassets */; };
+		E5DB47A32CC7296700640C33 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E5DB47A22CC7296700640C33 /* Base */; };
+		E5DB47A82CC7299500640C33 /* DeviceInsight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB478A2CC726EE00640C33 /* DeviceInsight.swift */; };
+		E5DB47A92CC7299700640C33 /* CoreAccesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB478C2CC7270000640C33 /* CoreAccesser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +42,19 @@
 		E5DB47702CC7263300640C33 /* DeviceInsightKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DeviceInsightKit.docc; sourceTree = "<group>"; };
 		E5DB47762CC7263300640C33 /* DeviceInsightKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInsightKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DB477B2CC7263300640C33 /* DeviceInsightKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInsightKitTests.swift; sourceTree = "<group>"; };
+		E5DB47862CC7265400640C33 /* DeviceInsightKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeviceInsightKit.podspec; sourceTree = "<group>"; };
+		E5DB47882CC7269700640C33 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E5DB478A2CC726EE00640C33 /* DeviceInsight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInsight.swift; sourceTree = "<group>"; };
+		E5DB478C2CC7270000640C33 /* CoreAccesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAccesser.swift; sourceTree = "<group>"; };
+		E5DB478E2CC7279E00640C33 /* CoreAccesserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAccesserTests.swift; sourceTree = "<group>"; };
+		E5DB47942CC7296500640C33 /* DeviceInsightKitSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInsightKitSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DB47962CC7296500640C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5DB47982CC7296500640C33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E5DB479A2CC7296500640C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5DB479D2CC7296500640C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5DB479F2CC7296700640C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5DB47A22CC7296700640C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5DB47A42CC7296700640C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +73,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5DB47912CC7296500640C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E5DB47622CC7263300640C33 = {
 			isa = PBXGroup;
 			children = (
+				E5DB47862CC7265400640C33 /* DeviceInsightKit.podspec */,
+				E5DB47882CC7269700640C33 /* LICENSE */,
 				E5DB476E2CC7263300640C33 /* DeviceInsightKit */,
 				E5DB477A2CC7263300640C33 /* DeviceInsightKitTests */,
+				E5DB47952CC7296500640C33 /* DeviceInsightKitSampleApp */,
 				E5DB476D2CC7263300640C33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +100,7 @@
 			children = (
 				E5DB476C2CC7263300640C33 /* DeviceInsightKit.framework */,
 				E5DB47762CC7263300640C33 /* DeviceInsightKitTests.xctest */,
+				E5DB47942CC7296500640C33 /* DeviceInsightKitSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +110,8 @@
 			children = (
 				E5DB476F2CC7263300640C33 /* DeviceInsightKit.h */,
 				E5DB47702CC7263300640C33 /* DeviceInsightKit.docc */,
+				E5DB478A2CC726EE00640C33 /* DeviceInsight.swift */,
+				E5DB478C2CC7270000640C33 /* CoreAccesser.swift */,
 			);
 			path = DeviceInsightKit;
 			sourceTree = "<group>";
@@ -81,8 +120,23 @@
 			isa = PBXGroup;
 			children = (
 				E5DB477B2CC7263300640C33 /* DeviceInsightKitTests.swift */,
+				E5DB478E2CC7279E00640C33 /* CoreAccesserTests.swift */,
 			);
 			path = DeviceInsightKitTests;
+			sourceTree = "<group>";
+		};
+		E5DB47952CC7296500640C33 /* DeviceInsightKitSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				E5DB47962CC7296500640C33 /* AppDelegate.swift */,
+				E5DB47982CC7296500640C33 /* SceneDelegate.swift */,
+				E5DB479A2CC7296500640C33 /* ViewController.swift */,
+				E5DB479C2CC7296500640C33 /* Main.storyboard */,
+				E5DB479F2CC7296700640C33 /* Assets.xcassets */,
+				E5DB47A12CC7296700640C33 /* LaunchScreen.storyboard */,
+				E5DB47A42CC7296700640C33 /* Info.plist */,
+			);
+			path = DeviceInsightKitSampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +189,23 @@
 			productReference = E5DB47762CC7263300640C33 /* DeviceInsightKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E5DB47932CC7296500640C33 /* DeviceInsightKitSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5DB47A52CC7296700640C33 /* Build configuration list for PBXNativeTarget "DeviceInsightKitSampleApp" */;
+			buildPhases = (
+				E5DB47902CC7296500640C33 /* Sources */,
+				E5DB47912CC7296500640C33 /* Frameworks */,
+				E5DB47922CC7296500640C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceInsightKitSampleApp;
+			productName = DeviceInsightKitSampleApp;
+			productReference = E5DB47942CC7296500640C33 /* DeviceInsightKitSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +220,9 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					E5DB47752CC7263300640C33 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E5DB47932CC7296500640C33 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -168,6 +242,7 @@
 			targets = (
 				E5DB476B2CC7263300640C33 /* DeviceInsightKit */,
 				E5DB47752CC7263300640C33 /* DeviceInsightKitTests */,
+				E5DB47932CC7296500640C33 /* DeviceInsightKitSampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DB47892CC7269700640C33 /* LICENSE in Resources */,
+				E5DB47872CC7265400640C33 /* DeviceInsightKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +264,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5DB47922CC7296500640C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DB47A02CC7296700640C33 /* Assets.xcassets in Resources */,
+				E5DB47A32CC7296700640C33 /* Base in Resources */,
+				E5DB479E2CC7296500640C33 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DB478D2CC7270000640C33 /* CoreAccesser.swift in Sources */,
+				E5DB478B2CC726EE00640C33 /* DeviceInsight.swift in Sources */,
 				E5DB47712CC7263300640C33 /* DeviceInsightKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +292,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DB477C2CC7263300640C33 /* DeviceInsightKitTests.swift in Sources */,
+				E5DB478F2CC7279E00640C33 /* CoreAccesserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DB47902CC7296500640C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DB47A82CC7299500640C33 /* DeviceInsight.swift in Sources */,
+				E5DB479B2CC7296500640C33 /* ViewController.swift in Sources */,
+				E5DB47A92CC7299700640C33 /* CoreAccesser.swift in Sources */,
+				E5DB47972CC7296500640C33 /* AppDelegate.swift in Sources */,
+				E5DB47992CC7296500640C33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +317,25 @@
 			targetProxy = E5DB47782CC7263300640C33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5DB479C2CC7296500640C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5DB479D2CC7296500640C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5DB47A12CC7296700640C33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5DB47A22CC7296700640C33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E5DB477E2CC7263300640C33 /* Debug */ = {
@@ -411,6 +532,7 @@
 		E5DB47842CC7263300640C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TNNPKNN4HZ;
@@ -427,6 +549,7 @@
 		E5DB47852CC7263300640C33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TNNPKNN4HZ;
@@ -435,6 +558,62 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apppppp.DeviceInsightKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5DB47A62CC7296700640C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TNNPKNN4HZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceInsightKitSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apppppp.DeviceInsightKitSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5DB47A72CC7296700640C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TNNPKNN4HZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceInsightKitSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apppppp.DeviceInsightKitSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +645,15 @@
 			buildConfigurations = (
 				E5DB47842CC7263300640C33 /* Debug */,
 				E5DB47852CC7263300640C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5DB47A52CC7296700640C33 /* Build configuration list for PBXNativeTarget "DeviceInsightKitSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DB47A62CC7296700640C33 /* Debug */,
+				E5DB47A72CC7296700640C33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
