@@ -27,8 +27,9 @@ public class DeviceInsight {
     
     public func startMonitoring() {
         // タイマーが既に存在する場合は無効化
-        timer?.invalidate()
-        
+        timer?.invalidate()       
+        // 初回時に一回キックする
+        fetchSystemInfo()
         // 新しいタイマーを作成して開始
         timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(fetchSystemInfo), userInfo: nil, repeats: true)
         timer?.fire() // タイマー開始と同時に最初のデータ取得
