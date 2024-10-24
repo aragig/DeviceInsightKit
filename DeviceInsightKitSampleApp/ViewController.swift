@@ -18,7 +18,7 @@ class ViewController: UIViewController, DeviceInsightDelegate {
         super.viewDidLoad()
         
         // DeviceInsightの初期化（5秒ごとにシステム情報を取得）
-        deviceInsight = DeviceInsight(interval: 5.0)
+        deviceInsight = DeviceInsight(interval: 2.0)
         deviceInsight.delegate = self
         deviceInsight.startMonitoring()
         

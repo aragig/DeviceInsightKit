@@ -31,8 +31,22 @@ public class DeviceInsight {
         // 初回時に一回キックする
         fetchSystemInfo()
         // 新しいタイマーを作成して開始
-        timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(fetchSystemInfo), userInfo: nil, repeats: true)
-        timer?.fire() // タイマー開始と同時に最初のデータ取得
+        
+        DispatchQueue.main.async { // タイマーはメインスレッドでないと実行されない
+            self.timer = Timer.scheduledTimer(timeInterval: self.interval, target: self, selector: #selector(self.fetchSystemInfo), userInfo: nil, repeats: true)
+            self.timer?.fire() // タイマー開始と同時に最初のデータ取得
+        }
+        // 以下は、タイマーをバックグラウンドスレッドで実行する例
+//        DispatchQueue.global(qos: .background).async { // バックグラウンドスレッドで実行
+//            self.timer = Timer(timeInterval: self.interval, target: self, selector: #selector(self.fetchSystemInfo), userInfo: nil, repeats: true)
+//            
+//            // タイマーをバックグラウンドスレッドのRunLoopに追加
+//            RunLoop.current.add(self.timer!, forMode: .common)
+//            RunLoop.current.run() // RunLoopを開始してタイマーを動作させる
+//            
+//            // タイマー開始と同時に最初のデータ取得
+//            self.timer?.fire()
+//        }
     }
     
     public func stopMonitoring() {
